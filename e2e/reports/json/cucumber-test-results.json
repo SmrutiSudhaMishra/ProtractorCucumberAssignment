@@ -1,0 +1,851 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Check the installation of the protractor framework",
+    "line": 1,
+    "id": "check-the-installation-of-the-protractor-framework",
+    "tags": [],
+    "uri": "e2e\\features\\assessment-check.feature",
+    "elements": [
+      {
+        "id": "check-the-installation-of-the-protractor-framework;open-the-browser",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Open the browser",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "The app is open on \"localhost\"",
+            "match": {
+              "location": "e2e\\steps\\app.steps.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2703000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\@serenity-js\\cucumber\\src\\listeners\\legacy\\cucumber-4.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 15000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "check-the-installation-of-the-protractor-framework;search-for-a-valid-people-character",
+        "keyword": "Scenario",
+        "line": 7,
+        "name": "Search for a valid People character",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "User is on the \"Star Wars Search\" page to search valid People character",
+            "match": {
+              "location": "e2e\\steps\\app.steps.ts:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 19000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "User clicks on \"People\" radio button for valid People character search",
+            "match": {
+              "location": "e2e\\steps\\app.steps.ts:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 45000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "Search with valid People character as \"Luke Skywalker\"",
+            "match": {
+              "location": "e2e\\steps\\app.steps.ts:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 84000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 11,
+            "name": "User clicks on Search button for valid People character search",
+            "match": {
+              "location": "e2e\\steps\\app.steps.ts:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3051000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Data",
+                      "Value"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Gender",
+                      "male"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Birth year",
+                      "19BBY"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Eye color",
+                      "blue"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Skin color",
+                      "fair"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "Search operation should display Gender, Birth year, Eye color and Skin color",
+            "match": {
+              "location": "e2e\\steps\\app.steps.ts:32"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3208000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\@serenity-js\\cucumber\\src\\listeners\\legacy\\cucumber-4.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 12000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "check-the-installation-of-the-protractor-framework;search-for-invalid-people-character",
+        "keyword": "Scenario",
+        "line": 19,
+        "name": "Search for Invalid People character",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 20,
+            "name": "User is on the \"Star Wars Search\" page to search invalid People character",
+            "match": {
+              "location": "e2e\\steps\\app.steps.ts:52"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 19000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 21,
+            "name": "User clicks on \"People\" radio button for invalid People character search",
+            "match": {
+              "location": "e2e\\steps\\app.steps.ts:55"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 32000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 22,
+            "name": "Search with invalid People character as \"**NA\"",
+            "match": {
+              "location": "e2e\\steps\\app.steps.ts:58"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 110000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 23,
+            "name": "User clicks on Search button for invalid People character search",
+            "match": {
+              "location": "e2e\\steps\\app.steps.ts:65"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3042000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 24,
+            "name": "Search operation should display result as \"Not found\" for invalid People character search",
+            "match": {
+              "location": "e2e\\steps\\app.steps.ts:69"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 24000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\@serenity-js\\cucumber\\src\\listeners\\legacy\\cucumber-4.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 16000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "check-the-installation-of-the-protractor-framework;search-for-a-valid-planets-character",
+        "keyword": "Scenario",
+        "line": 26,
+        "name": "Search for a valid Planets character",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 27,
+            "name": "User is on the \"Star Wars Search\" page to search valid Planets character",
+            "match": {
+              "location": "e2e\\steps\\app.steps.ts:76"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 22000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 28,
+            "name": "User clicks on \"Planets\" radio button for valid Planets character search",
+            "match": {
+              "location": "e2e\\steps\\app.steps.ts:80"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 53000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 29,
+            "name": "Search with valid Planets character as \"Hoth\"",
+            "match": {
+              "location": "e2e\\steps\\app.steps.ts:84"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 113000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 30,
+            "name": "User clicks on Search button for valid Planets character search",
+            "match": {
+              "location": "e2e\\steps\\app.steps.ts:90"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3038000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Data",
+                      "Value"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Population",
+                      "unknown"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Climate",
+                      "frozen"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Gravity",
+                      "1.1 standard"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Then ",
+            "line": 31,
+            "name": "Search operation should display Population,Climate and Gravity",
+            "match": {
+              "location": "e2e\\steps\\app.steps.ts:94"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\@serenity-js\\cucumber\\src\\listeners\\legacy\\cucumber-4.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "check-the-installation-of-the-protractor-framework;search-for-invalid-planets-character",
+        "keyword": "Scenario",
+        "line": 38,
+        "name": "Search for Invalid Planets character",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 39,
+            "name": "User is on the \"Star Wars Search\" page to search invalid Planets character",
+            "match": {
+              "location": "e2e\\steps\\app.steps.ts:106"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 27000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 40,
+            "name": "User clicks on \"Planets\" radio button for invalid Planets character search",
+            "match": {
+              "location": "e2e\\steps\\app.steps.ts:110"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 38000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 41,
+            "name": "Search with invalid Planets character as \"**Not\"",
+            "match": {
+              "location": "e2e\\steps\\app.steps.ts:113"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 157000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 42,
+            "name": "User clicks on Search button for invalid Planets character search",
+            "match": {
+              "location": "e2e\\steps\\app.steps.ts:119"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3041000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 43,
+            "name": "Search operation should display result as \"Not found\" for invalid Planets character search",
+            "match": {
+              "location": "e2e\\steps\\app.steps.ts:124"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 22000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\@serenity-js\\cucumber\\src\\listeners\\legacy\\cucumber-4.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 22000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "check-the-installation-of-the-protractor-framework;verify-empty-result-list-on-click-of-search-button-after-clearing-\"search-form\"",
+        "keyword": "Scenario",
+        "line": 46,
+        "name": "Verify empty result list on click of search button after clearing \"Search form\"",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 47,
+            "name": "User is on the \"Star Wars Search\" page to verify empty result list",
+            "match": {
+              "location": "e2e\\steps\\app.steps.ts:131"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 19000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 48,
+            "name": "User clicks on \"People\" radio button for single character search",
+            "match": {
+              "location": "e2e\\steps\\app.steps.ts:135"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 33000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 49,
+            "name": "User enters Single People character as \"R2\" in Search form and clicks on search button",
+            "match": {
+              "location": "e2e\\steps\\app.steps.ts:138"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3139000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 50,
+            "name": "User clears Search form for Single People character search",
+            "match": {
+              "location": "e2e\\steps\\app.steps.ts:147"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 87000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 51,
+            "name": "User clicks on Search button for Single People character search",
+            "match": {
+              "location": "e2e\\steps\\app.steps.ts:154"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3035000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 52,
+            "name": "Search operation should remove People \"R2\" result",
+            "match": {
+              "location": "e2e\\steps\\app.steps.ts:158"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 27000000,
+              "error_message": "AssertionError\n    + expected - actual\n\n    -true\n    +false\n"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\@serenity-js\\cucumber\\src\\listeners\\legacy\\cucumber-4.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 18000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "check-the-installation-of-the-protractor-framework;verify-search-results-by-the-\"search\"-button-or-by-pressing-\"enter\"-on-the-search-field",
+        "keyword": "Scenario",
+        "line": 56,
+        "name": "Verify search results by the \"Search\" button or by pressing \"Enter\" on the search field",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 57,
+            "name": "User is on the \"Star Wars Search\" page to verify ways for search results",
+            "match": {
+              "location": "e2e\\steps\\app.steps.ts:164"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 24000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 58,
+            "name": "User clicks on \"People\" radio button for people character search",
+            "match": {
+              "location": "e2e\\steps\\app.steps.ts:167"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 41000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 59,
+            "name": "User clicks on search button after inputing People character as \"R2\" in Search form",
+            "match": {
+              "location": "e2e\\steps\\app.steps.ts:170"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3169000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 60,
+            "name": "User clears Search form after completing search results by Search button",
+            "match": {
+              "location": "e2e\\steps\\app.steps.ts:178"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 84000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 61,
+            "name": "User Presses on Enter Key after inputing People character as \"R2\" in Search form",
+            "match": {
+              "location": "e2e\\steps\\app.steps.ts:184"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 87000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 62,
+            "name": "Search operation should dispaly People character with \"R2\" result",
+            "match": {
+              "location": "e2e\\steps\\app.steps.ts:190"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 22000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\@serenity-js\\cucumber\\src\\listeners\\legacy\\cucumber-4.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 26000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "check-the-installation-of-the-protractor-framework;verify-planets-character-search-with-people-characher-search-data-filled-in-seach-form",
+        "keyword": "Scenario",
+        "line": 66,
+        "name": "Verify Planets character Search with People characher search data filled in seach form",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 67,
+            "name": "User is on the \"Star Wars Search\" page to verify search results when user switches search options from People to Planet",
+            "match": {
+              "location": "e2e\\steps\\app.steps.ts:196"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 17000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 68,
+            "name": "User clicks on \"People\" radio button for people character search option",
+            "match": {
+              "location": "e2e\\steps\\app.steps.ts:200"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 31000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 69,
+            "name": "User enters People character as \"R2\" in Search form",
+            "match": {
+              "location": "e2e\\steps\\app.steps.ts:203"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 108000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 70,
+            "name": "User clicks Search button to see People Character data",
+            "match": {
+              "location": "e2e\\steps\\app.steps.ts:210"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3035000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 71,
+            "name": "User clicks on \"Planets\" radio button for Planet character search option",
+            "match": {
+              "location": "e2e\\steps\\app.steps.ts:215"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 50000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 72,
+            "name": "User clicks Search button to see Planet Character data",
+            "match": {
+              "location": "e2e\\steps\\app.steps.ts:218"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3037000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 73,
+            "name": "Search operation should display result as \"Not found\" for searching Planet character result with People input data",
+            "match": {
+              "location": "e2e\\steps\\app.steps.ts:223"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 41000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\@serenity-js\\cucumber\\src\\listeners\\legacy\\cucumber-4.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 12000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "check-the-installation-of-the-protractor-framework;verify-planets-character-search-with-partial-matching-data",
+        "keyword": "Scenario",
+        "line": 76,
+        "name": "Verify Planets character Search with partial matching data",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 77,
+            "name": "User is on the \"Star Wars Search\" page to verify search results with partial matching data",
+            "match": {
+              "location": "e2e\\steps\\app.steps.ts:230"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 17000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 78,
+            "name": "User clicks on \"People\" radio button for multiple people character search",
+            "match": {
+              "location": "e2e\\steps\\app.steps.ts:234"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 31000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 79,
+            "name": "User enters partial matching People character as \"Darth\" in Search form",
+            "match": {
+              "location": "e2e\\steps\\app.steps.ts:238"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 104000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 80,
+            "name": "User clicks Search button to see Multiple People Character search results",
+            "match": {
+              "location": "e2e\\steps\\app.steps.ts:246"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3031000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 81,
+            "name": "Search operation should display multiple search results matching with data \"Darth\"",
+            "match": {
+              "location": "e2e\\steps\\app.steps.ts:252"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 47000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\@serenity-js\\cucumber\\src\\listeners\\legacy\\cucumber-4.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 24000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,167 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Check the installation of the protractor framework",
+    "line": 1,
+    "id": "check-the-installation-of-the-protractor-framework",
+    "tags": [],
+    "uri": "e2e\\features\\assessment-check.feature",
+    "elements": [
+      {
+        "id": "check-the-installation-of-the-protractor-framework;open-the-browser",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Open the browser",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "The app is open on \"localhost\"",
+            "match": {
+              "location": "e2e\\steps\\app.steps.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2848000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\@serenity-js\\cucumber\\src\\listeners\\legacy\\cucumber-4.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 24000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "check-the-installation-of-the-protractor-framework;search-for-a-valid-people-character",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Search for a valid People character",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "User is on the \"Star Wars Search\" page to search valid People character",
+            "match": {
+              "location": "e2e\\steps\\app.steps.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 22000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "User clicks on \"People\" radio button for valid People character search",
+            "match": {
+              "location": "e2e\\steps\\app.steps.ts:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 46000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "Search with valid People character as \"Luke Skywalker\"",
+            "match": {
+              "location": "e2e\\steps\\app.steps.ts:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 85000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "User clicks on Search button for valid People character search",
+            "match": {
+              "location": "e2e\\steps\\app.steps.ts:32"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4055000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Data",
+                      "Value"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Gender",
+                      "Male"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "BirthYear",
+                      "19BBY"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "EyeColor",
+                      "blue"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "SkinColor",
+                      "fair"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "Search operation should display Gender, Birth year, Eye color and Skin color",
+            "match": {
+              "location": "e2e\\steps\\app.steps.ts:37"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\@serenity-js\\cucumber\\src\\listeners\\legacy\\cucumber-4.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 16000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
